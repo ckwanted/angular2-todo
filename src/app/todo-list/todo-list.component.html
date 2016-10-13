@@ -1,0 +1,12 @@
+<form (submit)="insertarTodo()">
+    <div class="form-group">
+        <input type="text" [(ngModel)]="nuevoTodo" name="nuevoTodo" class="form-control" placeholder="Introduce tu todo ...">
+    </div>
+    <button type="submit" class="btn btn-primary">Insertar Todo</button>
+</form>
+
+<hr/>
+
+<ul class="list-group">
+    <app-todo *ngFor="let todo of todos" [todo]="todo"></app-todo>
+</ul>

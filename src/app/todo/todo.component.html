@@ -1,0 +1,4 @@
+<li class="list-group-item" [ngClass]="{checked: todo.completed}">
+    {{ todo.title }}
+    <input type="checkbox" [(ngModel)]="todo.completed" (click)="onChangeCheckbox()">
+</li>
